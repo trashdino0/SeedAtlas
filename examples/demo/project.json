@@ -1,0 +1,107 @@
+{
+  "schemaVersion" : 1,
+  "project" : {
+    "name" : "Demo: synthetic evidence",
+    "notes" : "Schema/difficulty demo only. The evidence is synthetic and does not describe a real world seed."
+  },
+  "world" : {
+    "edition" : "java",
+    "version" : "1.21.4",
+    "dimension" : "overworld",
+    "largeBiomes" : false
+  },
+  "anchors" : [ {
+    "id" : "base",
+    "frame" : "local",
+    "origin" : null,
+    "searchArea" : {
+      "xMin" : -5000,
+      "xMax" : 5000,
+      "zMin" : -5000,
+      "zMax" : 5000,
+      "yMin" : 10,
+      "yMax" : 60
+    }
+  } ],
+  "evidence" : [ {
+    "type" : "texture_rotation",
+    "id" : "rot-1",
+    "anchor" : "base",
+    "x" : 0,
+    "y" : 64,
+    "z" : 0,
+    "rotation" : 1,
+    "side" : false,
+    "source" : "frame_0012.png",
+    "confidence" : 1.0
+  }, {
+    "type" : "texture_rotation",
+    "id" : "rot-2",
+    "anchor" : "base",
+    "x" : 1,
+    "y" : 64,
+    "z" : 0,
+    "rotation" : 3,
+    "side" : false,
+    "source" : "frame_0012.png",
+    "confidence" : 1.0
+  }, {
+    "type" : "biome",
+    "id" : "biome-1",
+    "frame" : "world",
+    "x" : -1621,
+    "y" : 200,
+    "z" : 913,
+    "biome" : "flower_forest",
+    "source" : "aerial_03.png",
+    "confidence" : 0.95
+  }, {
+    "type" : "structure",
+    "id" : "struct-1",
+    "frame" : "world",
+    "structure" : "village_plains",
+    "x" : 1234,
+    "z" : -567,
+    "tolerance" : 16,
+    "source" : "map.png",
+    "confidence" : 0.9
+  }, {
+    "type" : "structure",
+    "id" : "struct-2",
+    "frame" : "world",
+    "structure" : "shipwreck",
+    "x" : -800,
+    "z" : 2200,
+    "tolerance" : 16,
+    "source" : "map.png",
+    "confidence" : 0.85
+  }, {
+    "type" : "stronghold",
+    "id" : "sh-1",
+    "ring" : 1,
+    "x" : -2663,
+    "z" : -655,
+    "tolerance" : 112,
+    "source" : "eye_throw.png",
+    "confidence" : 0.8
+  }, {
+    "type" : "end_pillar",
+    "id" : "pillars-1",
+    "heights" : [ 12, 44, 77, 103, 131, 158, 176, 199, 221, 244 ],
+    "source" : "end.png",
+    "confidence" : 0.9
+  }, {
+    "type" : "spawn",
+    "id" : "spawn-1",
+    "x" : 0,
+    "z" : 0,
+    "tolerance" : 32,
+    "source" : "compass.png",
+    "confidence" : 0.7
+  } ],
+  "constraints" : {
+    "seedRange" : null,
+    "knownSeedPrefix" : null,
+    "excludeSeeds" : [ ]
+  }
+}

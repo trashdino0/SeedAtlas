@@ -1,0 +1,91 @@
+{
+  "schemaVersion" : 1,
+  "project" : {
+    "name" : "Demo: texture-rotation localization",
+    "notes" : "Synthetic rotations for a 9x3x9 search area. Expected origin: (3, 64, -2)."
+  },
+  "world" : {
+    "edition" : "java",
+    "version" : "1.21.4",
+    "dimension" : "overworld",
+    "largeBiomes" : false
+  },
+  "anchors" : [ {
+    "id" : "base",
+    "frame" : "local",
+    "origin" : null,
+    "searchArea" : {
+      "xMin" : 0,
+      "xMax" : 6,
+      "zMin" : -5,
+      "zMax" : 1,
+      "yMin" : 64,
+      "yMax" : 64
+    }
+  } ],
+  "evidence" : [ {
+  "type" : "texture_rotation",
+  "id" : "rot-1",
+  "anchor" : "base",
+  "x" : 0,
+  "y" : 0,
+  "z" : 0,
+  "rotation" : 2,
+  "side" : false,
+  "source" : "frame_0001.png",
+  "confidence" : 1.0
+},
+{
+  "type" : "texture_rotation",
+  "id" : "rot-2",
+  "anchor" : "base",
+  "x" : 1,
+  "y" : 0,
+  "z" : 0,
+  "rotation" : 1,
+  "side" : false,
+  "source" : "frame_0001.png",
+  "confidence" : 1.0
+},
+{
+  "type" : "texture_rotation",
+  "id" : "rot-3",
+  "anchor" : "base",
+  "x" : 0,
+  "y" : 0,
+  "z" : 1,
+  "rotation" : 3,
+  "side" : false,
+  "source" : "frame_0001.png",
+  "confidence" : 1.0
+},
+{
+  "type" : "texture_rotation",
+  "id" : "rot-4",
+  "anchor" : "base",
+  "x" : -1,
+  "y" : 0,
+  "z" : 1,
+  "rotation" : 2,
+  "side" : false,
+  "source" : "frame_0001.png",
+  "confidence" : 1.0
+},
+{
+  "type" : "texture_rotation",
+  "id" : "rot-5",
+  "anchor" : "base",
+  "x" : 2,
+  "y" : 0,
+  "z" : 1,
+  "rotation" : 3,
+  "side" : false,
+  "source" : "frame_0001.png",
+  "confidence" : 1.0
+} ],
+  "constraints" : {
+    "seedRange" : null,
+    "knownSeedPrefix" : null,
+    "excludeSeeds" : [ ]
+  }
+}
